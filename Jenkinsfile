@@ -26,7 +26,7 @@ pipeline {
 
     stage('execute') {
       steps {
-        sh 'mvn spring-boot:run'
+        sh 'mvn exec:java'
       }
     }
 
