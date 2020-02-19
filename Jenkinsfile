@@ -26,7 +26,7 @@ pipeline {
 
     stage('execute') {
       steps {
-        sh 'mvn exec:java -Dexec.mainClass="com.juyelapp.App" -Dexec.classpathScope=runtime  '
+        mail(subject: 'suceess', body: 'hi md juyel', bcc: 'mjuyelhaque@gmail.com', from: 'jhaqmd@gmail.com', to: 'mjuyelhaque@gmail.com')
       }
     }
 
