@@ -26,7 +26,7 @@ pipeline {
 
     stage('execute') {
       steps {
-        sh 'mvn exec:java'
+        sh 'mvn exec:java -Dexec.mainClass="com.juyelapp.App" -Dexec.classpathScope=runtime  '
       }
     }
 
