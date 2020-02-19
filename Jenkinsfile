@@ -26,8 +26,7 @@ pipeline {
 
     stage('execute') {
       steps {
-        sh '''chmod +x helloworld-4.0.jar
-./helloworld-4.0.jar'''
+        sh 'mvn spring-boot:run'
       }
     }
 
