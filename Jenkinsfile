@@ -26,7 +26,7 @@ pipeline {
 
     stage('execute') {
       steps {
-        mail(subject: 'suceess', body: 'hi md juyel', bcc: 'mjuyelhaque@gmail.com', from: 'jhaqmd@gmail.com', to: 'mjuyelhaque@gmail.com')
+        mail(subject: 'suceess', body: 'hi md juyel', to: 'mjuyelhaque@gmail.com')
       }
     }
 
