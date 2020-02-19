@@ -8,19 +8,19 @@ pipeline {
   stages {
     stage('clean') {
       steps {
-        sh 'mvn clean'
+        sh 'mvn compile'
       }
     }
 
     stage('compile') {
       steps {
-        sh 'mvn compile'
+        sh 'mvn package'
       }
     }
 
     stage('package') {
       steps {
-        sh 'mvn package'
+        sh 'mvn install'
       }
     }
 
